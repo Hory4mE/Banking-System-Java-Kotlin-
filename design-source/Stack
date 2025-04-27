@@ -1,0 +1,11 @@
+3. Tech Stack Confirm
+
+ภาษาหลัก: Kotlin + Spring Boot 3 (หรือ Java ถ้าอยากได้)
+
+Database: PostgreSQL (รองรับ transaction ดีมาก)
+
+Auth: JWT (JSON Web Token) สำหรับ Login
+
+API Spec: ใช้ Swagger document อัตโนมัติ
+
+Test: JUnit5 + MockK (หรือ JUnit5 + Mockito ถ้า Java)

@@ -1,0 +1,23 @@
+2. Flow การโอนเงิน (Transfer Flow)
+
+ผู้ใช้ Authenticated เรียบร้อย (JWT Token)
+
+เรียก API /api/v1/account/transfer
+
+Backend:
+
+ตรวจสอบว่าบัญชีต้นทางมีเงินพอหรือไม่
+
+Lock บัญชีต้นทาง-ปลายทาง (ป้องกัน concurrent transfer)
+
+หักยอดเงินจากบัญชีต้นทาง
+
+เพิ่มยอดเงินให้บัญชีปลายทาง
+
+สร้าง Transaction Record ใหม่
+
+Commit Transaction ทั้งหมด
+
+ตอบกลับผู้ใช้ว่าโอนสำเร็จ พร้อมข้อมูลสรุป
+
+💬 หมายเหตุ: ตรงนี้ต้องใช้ Database Transaction (ACID) เพื่อให้โอนเงินสมบูรณ์แบบ 100% หรือไม่โอนเลย

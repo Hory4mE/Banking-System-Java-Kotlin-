@@ -1,0 +1,10 @@
+banking-system/
+├── account-service/        <-- Java (Spring Boot)
+│     ├── src/main/java/com/bank/account/
+│     └── build.gradle
+├── transaction-service/    <-- Kotlin (Spring Boot)
+│     ├── src/main/kotlin/com/bank/transaction/
+│     └── build.gradle.kts
+├── docker-compose.yml     <-- (Optional) Database Postgres + Network
+├── README.md              <-- อธิบายโปรเจกต์
+└── settings.gradle
