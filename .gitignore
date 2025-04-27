@@ -1,0 +1,42 @@
+# Gradle
+.gradle/
+build/
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Kotlin
+*.kotlin_module
+*.kotlin_metadata
+
+# IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Gradle Wrapper
+gradle/wrapper/gradle-wrapper.jar
+gradle/wrapper/gradle-wrapper.properties
+
+# Logs
+*.log
+
+# .env files
+.env
+
+# Java dependencies
+/libs/
+
+# Spring Boot generated files
+*.log
+target/
+out/
