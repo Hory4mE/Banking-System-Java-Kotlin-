@@ -1,0 +1,15 @@
+plugins {
+    id 'org.springframework.boot' version '3.2.5' apply false // apply false คือบอกว่า module ย่อยค่อย apply plugin Spring Boot
+    id 'io.spring.dependency-management' version '1.1.4'
+}
+
+allprojects {
+    group = 'com.bank'
+    version = '0.0.1-SNAPSHOT'
+}
+
+subprojects {
+    repositories {
+        mavenCentral() // ทุก module ใช้ mavenCentral โหลด dependency
+    }
+}
